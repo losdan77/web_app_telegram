@@ -39,7 +39,6 @@
             let name = document.getElementById("user_name").value;
             let email = document.getElementById("user_email").value;
             let phone = document.getElementById("user_phone").value;
-            tg.close();
 
             let data = {
                 name: name,
@@ -49,6 +48,7 @@
 
             tg.sendData(JSON.stringify(data));
 
+            tg.close();
         });
     </script>
 </body>
